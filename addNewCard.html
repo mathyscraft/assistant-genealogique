@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/loupe.png">
+
+    <title>Ajout Ancètre</title>
+</head>
+<body>
+    <header class="nav">
+        <a href="/index.html" id="back">Retour <<</a>
+    </header>
+    <form id="add-new-card-box">
+        <h1>NOUVEL ANCETRE</h1>
+        <div>
+            <div>
+                <p>Nom* : <input name="name" type="text" required> (Nom de jeune fille : <input name="birthname" type="text">)</p>
+                <p>Prénom* : <input name="firstname" type="text" required> (Prénom d'usage : "<input name="usualname" type="text">")</p>
+                <p>Profession : <input name="job" type="text"></p>
+                <p>Sexe : <input name="gender" type="radio" id="homme" value="homme"><label for="homme"> homme </label><input name="gender" type="radio" id="femme" value="femme"><label for="femme"> femme </label><input name="gender" type="radio" id="autre" value="autre"><label for="autre"> autre</label></p>
+        
+            </div>
+        </div>
+        <div>
+            <img src="/img/stork.png">
+            <div>
+                <p>Date de naissance : <input name="birthdate" type="date"></p>
+                <p>Lieu de naissance : <input name="birthplace" type="text"></p>
+                <p>Nom du père : <input name="dadname" type="text"> Prénom du père : <input name="dadfirstname" type="text"></p>
+                <p>Nom de la mère : <input name="momname" type="text" placeholder="Nom de jeune fille"> Prénom de la mère : <input name="momfirstname" type="text"></p>
+                <p>Lien acte de naissance : <input name="birthurl" class="url-input" type="url" placeholder="https://les-archives-de-machin.fr/refdelacte"></p>
+            </div>
+        </div>
+        
+        <div>
+            <img src="/img/dove.png">
+            <div>
+                <p>Date du décès : <input name="deathdate" type="date"></p>
+                <p>Lieu du décès : <input name="deathplace"type="text"></p>
+                <p>Lien acte de décès : <input name="deathurl" class="url-input" type="url" placeholder="https://les-archives-de-machin.fr/refdelacte"></p>
+            </div>
+        </div>
+        
+        <div>
+            <img src="/img/rings.png">
+            <div>
+                <p>Marié.e avec :</p>
+                <p>Nom : <input name="partnername" type="text" placeholder="(Nom de jeune fille)"> Prénom : <input name="partnerfirstname" type="text"></p>
+                <p>Date du mariage : <input name="weddingdate" type="date"></p>
+                <p>Lieu du mariage : <input name="weddingplace" type="text"></p>
+                <p>Lien acte de mariage : <input name="weddingurl" class="url-input" type="url" placeholder="https://les-archives-de-machin.fr/refdelacte"></p>
+            </div>
+        </div>
+        
+        <p>Notes : <input type="text" name="notes"></p>
+        
+        <p>Les informations suivies d'un * sont obligatoires.</p>
+        <button type="submit">Envoyer</button>
+    </form>
+    <a href="https://www.flaticon.com/free-icons/dove" title="dove icons">Dove icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/stork" title="stork icons">Stork icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/wedding" title="wedding icons">Wedding icons created by Freepik - Flaticon</a>
+</body>
+<!-- <script type="text/javascript" src="/eel.js"></script> -->
+<script src="newAncestor.js"></script>
+</html>

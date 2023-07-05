@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Généalogie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/loupe.png">
+</head>
+<body>
+    <header class="nav">
+        <div>
+            <a href="/addNewCard.html" id="newAncestor" tabindex="0">Nouvel ancètre</a>
+            <button><img id="import" src="/img/import.svg" alt="import" ></button>
+            <button><img id="export" src="/img/export.svg" alt="export" ></button>
+        </div>
+        <div>
+            <img src="/img/loupe.png">
+            <h1>Assistant<br>Généalogique</h1>
+        </div>
+    </header>
+    <div id="item-list">
+        <div class="info-box">
+            <header>
+                <h3><span id="nom">NOM</span><span id="nom-de-naissance"> (Née : Nom de jeune fille)</span></h3>
+                <h4><span id="prenom">Prénoms</span><span id="prenom-courant"> ("prénom d'usage")</span></h4>
+                <p id="annees">1800 - 1880</p>
+            </header>
+            <p><b>Né(e) le</b> 01/01/1800 <b>à</b> Ville</p>
+            <p>Fils/fille de NOM DU PERE prenom et de NOM DE LA MERE prenom</p>
+            <p><b>Célibataire / Marié(e) avec</b> NOM DE NAISSANCE Prénom <b>le</b> 02/03/1823 <b>à</b> Ville</p>
+            <p><b>Profession de</b> laboureur</p>
+            <p><b>Décédé(e) le</b> 12/12/1880 <b>à</b> Ville</p>
+            <p>Notes :</p>
+            <p><a>acte de naissance</a> - <a>acte de mariage</a> - <a>acte de décès</a> -</p>
+        </div>
+    </div>
+    <div id="overlay" hidden></div>
+    <div id="delete-alert" hidden>
+        <h2>Etes-vous bien sûr de vouloir supprimer "<span id="ancestor-to-delete"></span>" ?</h2>
+        <p>Attention, cette action est irréversible !</p>
+        <div>
+            <button id="confirm-delete">Supprimer</button>
+            <button id="cancel-delete">Annuler</button>
+        </div>
+    </div>
+    <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Vectors Market - Flaticon</a>
+</body>
+<script src="/loadsAncestors.js"></script>
+<script src="/exportimport.js"></script>
+</html>

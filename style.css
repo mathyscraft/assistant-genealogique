@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+body {
+    background-color: #FFFDEE;
+    background-image: url(/img/9149805.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+button {
+    border: solid 2px transparent;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #9cfd9c;
+    text-align: center;
+}
+button:hover {
+    border: solid 2px black;
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav div {
+    display: flex;
+}
+.nav img {
+    width: 30px;
+    object-fit: contain;
+}
+.nav h1 {
+    margin: 0 20px;
+}
+.nav h1 img {
+    margin-left: 10px;
+}
+
+#newAncestor, #back {
+    border: solid 2px transparent;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9cfd9c;
+    color: #000000;
+    text-decoration: none;
+}
+#newAncestor:hover, #back:hover {
+    border: solid 2px black;
+    text-decoration: underline;
+}
+
+#item-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-box {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: min-content;
+    background-color: #ffffffe0;
+    box-shadow: 0px 0px 5px #0000002d;
+    border-radius: 20px;
+}
+.info-box > header {
+    text-align: center;
+    margin: -10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    background-color: #9cfd9c;
+    border-radius: 20px;
+    box-shadow: 0px 5px 4px #0000002d;
+}
+.info-box > p {
+    margin: 5px 0;
+}
+
+.male > header {
+    background-color: #9cb6fd;
+}
+.male > button {
+    background-color: #9cb6fd;
+
+}
+.female > header {
+    background-color: #fd9cf0;
+}
+.female > button {
+    background-color: #fd9cf0;
+}
+
+#add-new-card-box {
+    box-sizing: border-box;
+    margin: 10px auto;
+    width: min-content;
+    padding: 20px;
+    background-color: #ffffffe0;
+    box-shadow: 0px 0px 10px #0000002d;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+#add-new-card-box > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#add-new-card-box > div {
+    display: flex;
+    padding: 10px;
+    margin: 10px 0;
+}
+#add-new-card-box > div > img{
+    width: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.url-input {
+    width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+    #add-new-card-box {
+        white-space: break-spaces;
+    }
+}
+
+#overlay {
+    position: fixed;
+    z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-color: #000000ab;
+}
+
+#delete-alert {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+#delete-alert p {
+    font-style: italic;
+}
+#confirm-delete {
+    background-color: #fd9c9c;
+}
